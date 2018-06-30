@@ -1,43 +1,46 @@
 Exercises 
 
-1. What data types do each of these values represent?
-1. "A Clockwork Orange" 	--- string
-2. 42 				--- integer
-3. 09/02/1945 			--- date
-4. 98.7 				--- float
-5. $15.99 			--- float
+1.What data types do each of these values represent?
+"A Clockwork Orange" 	--- string
+42 				--- integer
+09/02/1945 		--- date
+98.7			--- float
+$15.99 			--- float
 
-2. Explain when a database would be used. Explain when a text file would be used.
+2.Explain when a database would be used. Explain when a text file would be used.
 A: A database would be used when storing lots of data that might also need to be changed. A text file would be used when data needs to be read by humans.
 
-3. Describe one difference between SQL and other programming languages.
+3.Describe one difference between SQL and other programming languages.
 A: Other programming languages are procedural, but SQL is declarative.
 
-4. In your own words, explain how the pieces of a database system fit together at a high level.
+4.In your own words, explain how the pieces of a database system fit together at a high level.
 A: Databases are organized into a table, which contains rows and columns. Each cell in that table contains a value that matches its data type. Databases are store in a binary file format, which makes it unreadable to humans. 
 
-5. Explain the meaning of table, row, column, and value.
+5.Explain the meaning of table, row, column, and value.
 A: A table is what is used to organize data, and it consists of rows and columns. Each row represents a single purchase, and rows go from left to right, and columns go from top to bottom. Columns define what the data represents. And values are the representation of the data that’s being hold in each “cell”.
 
-6. List three data types that can be used in a table.
+6.List three data types that can be used in a table.
 A: String, Integer, and Date.
 
-7. Given this payments table, provide an English description of the following queries and include their results:
-    		SELECT date, amount      
-      FROM payments;     
-        
-      SELECT amount     
-      FROM payments      
-      WHERE amount > 500;       
-      
-      SELECT *      
-      FROM payments      
-      WHERE payee = 'Mega Foods';
-A: The first query reads, “I’m looking for the dates and amounts, from the payments table”.
+7.Given this payments table, provide an English description of the following queries and include their results:
+
+SELECT date, amount
+FROM payments;
+
+SELECT amount
+FROM payments
+WHERE amount > 500;
+
+SELECT *
+FROM payments
+WHERE payee = 'Mega Foods';
+
+A: 
+The first query reads, “I’m looking for the dates and amounts, from the payments table”.
 The second query reads, “I’m looking for amounts, from the payments table, which are higher than 500”.
 The third query reads, “I’m looking for all info in the payments table that’s related to a payee with the name ‘Mega Foods”.
 
-8. Given this users table, write SQL queries using the following criteria and include the output:
+8.Given this users table, write SQL queries using the following criteria and include the output:
 
 The email and sign-up date for the user named DeAndre Data.
 A: 
